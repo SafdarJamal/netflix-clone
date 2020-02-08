@@ -6,12 +6,11 @@ import styles from './style.css';
 
 class Movie extends Component {
   componentDidMount() {
-    this.props.fetchMovie(this.props.params.id);
+    // this.props.fetchMovie({ index: this.props.match.params.id });
   }
 
   render() {
-    const { movie = { starring: [] } } = this.props;
-    console.log(this.props);
+    const { movie } = this.props;
 
     return (
       <div
@@ -36,7 +35,7 @@ class Movie extends Component {
           </div>
         </div>
         <Link className={styles.closeButton} to="/movies">
-          Back
+          X
         </Link>
       </div>
     );
