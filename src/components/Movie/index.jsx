@@ -1,12 +1,50 @@
-import React from 'react';
-import './style.css';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchMovie } from '../../actions';
+import { Link } from 'react-router-dom';
+import styles from './style.css';
 
-const Movie = () => {
-  return (
-    <div>
-      <h1>Movie</h1>
-    </div>
-  );
+class Movie extends Component {
+  componentDidMount() {
+    this.props.fetchMovie(this.props.params.id);
+  }
+
+  render() {
+    const { movie = { starring: [] } } = this.props;
+    console.log(this.props);
+
+    return (
+      <div
+        className={styles.movie}
+        style={{
+          backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 1) 0%,➥ rgba(0, 0, 0, 0.625) 100%), url(${movie.cover})`
+        }}
+      >
+        <div
+          className={styles.cover}
+          style={{ backgroundImage: `url(${movie.cover})` }}
+        />
+        <div className={styles.description}>
+          <div className={styles.title}>{movie.title}</div>
+          <div className={styles.year}>{movie.year}</div>
+          <div className={styles.starring}>
+            {movie.starring.map((actor = {}, index) => (
+              <div key={index} className={styles.actor}>
+                {actor.name}
+              </div>
+            ))}
+          </div>
+        </div>
+        <Link className={styles.closeButton} to="/movies">
+          Back
+        </Link>
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = state => {
+  return { movie: state.movies.current };
 };
 
-export default Movie;
+export default connect(mapStateToProps, { fetchMovie })(Movie);
