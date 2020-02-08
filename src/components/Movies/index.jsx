@@ -6,14 +6,13 @@ import styles from './style.css';
 
 class Movies extends Component {
   render() {
-    const { children, movies = [], params = {} } = this.props;
-    console.log(this.props);
+    const { children, movies, match } = this.props;
 
     return (
       <div className={styles.movies}>
-        <div className={params.id ? styles.listHidden : styles.list}>
+        <div className={match.params.id ? styles.listHidden : styles.list}>
           {movies.map((movie, index) => (
-            <Link key={index} to={`/movies/${index + 1}`}>
+            <Link key={index} to={`/movies/${index}`}>
               <div
                 className={styles.movie}
                 style={{ backgroundImage: `url(${movie.cover})` }}
