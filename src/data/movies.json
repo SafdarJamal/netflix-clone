@@ -1,7 +1,7 @@
 [
   {
     "title": "Pirates of the Caribbean: On Stranger Tides",
-    "cover": "/images/On_Stranger_Tides_Poster.jpg",
+    "cover": "/images/On_Stranger_Tides.jpg",
     "year": "2011",
     "cost": 378.5,
     "starring": [
@@ -24,7 +24,7 @@
   },
   {
     "title": "Pirates of the Caribbean: At World's End",
-    "cover": "/images/Pirates_AWE_Poster.jpg",
+    "cover": "/images/At_Worlds_End.jpg",
     "year": "2007",
     "cost": 300,
     "starring": [
@@ -47,7 +47,7 @@
   },
   {
     "title": "Avengers: Age of Ultron",
-    "cover": "/images/Avengers_Age_of_Ultron.jpg",
+    "cover": "/images/Avengers_Age_Of_Ultron.jpg",
     "year": "2015",
     "cost": 279.9,
     "starring": [
@@ -70,7 +70,7 @@
   },
   {
     "title": "John Carter",
-    "cover": "/images/John_carter_poster.jpg",
+    "cover": "/images/John_Carter.jpg",
     "year": "2012",
     "cost": 263.7,
     "starring": [
@@ -93,7 +93,7 @@
   },
   {
     "title": "Tangled",
-    "cover": "/images/Tangled_poster.jpg",
+    "cover": "/images/Tangled.jpg",
     "year": "2010",
     "cost": 260,
     "starring": [
@@ -110,7 +110,7 @@
   },
   {
     "title": "Spider-Man 3",
-    "cover": "/images/Spider-Man_3%2C_International_Poster.jpg",
+    "cover": "/images/Spider_Man_3.jpg",
     "year": "2007",
     "cost": 258,
     "starring": [
@@ -133,7 +133,7 @@
   },
   {
     "title": "Harry Potter and the Half-Blood Prince",
-    "cover": "/images/harry-potter-and-the-half-blood-prince.jpg",
+    "cover": "/images/Harry_Potter_And_The_Half_Blood_Prince.jpg",
     "year": "2009",
     "cost": 250,
     "starring": [
@@ -156,7 +156,7 @@
   },
   {
     "title": "Spectre",
-    "cover": "/images/MV5BMjIwNTA1MDA2Ml5BMl5BanBnXkFtZTgwNzIzMTA5NDE@._V1_SX640_SY720_.jpg",
+    "cover": "/images/Spectre.jpg",
     "year": "2015",
     "cost": 245,
     "starring": [
@@ -179,7 +179,7 @@
   },
   {
     "title": "Avatar",
-    "cover": "/images/Avatar-Teaser-Poster.jpg",
+    "cover": "/images/Avatar.jpg",
     "year": "2009",
     "cost": 237,
     "starring": [
@@ -202,7 +202,7 @@
   },
   {
     "title": "The Dark Knight Rises",
-    "cover": "/images/Dark_knight_rises_poster.jpg",
+    "cover": "/images/The_Dark_knight_Rises.jpg",
     "year": "2012",
     "cost": 230,
     "starring": [
