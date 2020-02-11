@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchMovies } from '../../actions';
 import { Link } from 'react-router-dom';
-import styles from './style.css';
+import styles from './style.module.css';
+
+import movies from '../../data/movies.json';
 
 class Movies extends Component {
+  componentDidMount() {
+    this.props.fetchMovies({ movies });
+  }
+
   render() {
     const { children, movies, match } = this.props;
 
